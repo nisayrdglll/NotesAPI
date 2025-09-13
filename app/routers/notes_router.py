@@ -17,7 +17,7 @@ def create_note(
     note = Note(
         owner_id=me.id,
         raw_text=body.raw_text,
-        status=NoteStatus.queued,
+        status=NoteStatus.QUEUED,
         attempts=0,
     )
     db.add(note)
